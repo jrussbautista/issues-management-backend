@@ -1,8 +1,8 @@
 import express from 'express';
 import * as issuesController from '../controllers/issues.controller';
 
-const issuesRoute = express.Router();
+const issuesRouter = express.Router();
 
-issuesRoute.route('/').get(issuesController.getIssues);
+issuesRouter.route('/').get(issuesController.getIssues);
 
-export default issuesRoute;
+export default issuesRouter;
